@@ -90,3 +90,19 @@ Initial scan results:
 **Secrets Scan**: Clean - no hardcoded secrets detected
 **Build Status**: All configurations valid and ready for development
 **Next Phase**: Ready for Phase 1 - Identity & Authentication setup
+
+## Secrets remediation (Phase 0.1)
+
+**Date**: 2025-09-25 09:20 EAT  
+**Issue**: gitleaks detected 4 secrets in README.md during Phase 0.1 preflight scan
+- Sidekiq license key pattern: `BUNDLE_ENTERPRISE__CONTRIBSYS__COM=cafebabe:deadbeef`
+- AWS access key patterns: `AKIAIMNOJVGFDXXXE4OA` (appeared in 3 locations)
+
+**Resolution**:
+- Replaced hardcoded secrets with environment variable placeholders:
+  - `${SIDEKIQ_LICENSE_KEY}` for Sidekiq license
+  - `${AWS_ACCESS_KEY_ID}` for AWS credentials
+- Added secret patterns to .gitignore to prevent future commits
+- Verified clean scan after remediation
+
+**Status**: ✅ Resolved - No secrets detected in final scan

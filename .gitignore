@@ -105,3 +105,8 @@ Thumbs.db
 *.pem
 *.key
 secrets/
+
+# Additional secret patterns (Phase 0.1 remediation)
+**/BUNDLE_ENTERPRISE__CONTRIBSYS__COM*
+**/AKIAI*
+**/aws_secret*
