@@ -1,0 +1,18 @@
+{
+  "name": "@et-univ/i18n",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next-intl": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

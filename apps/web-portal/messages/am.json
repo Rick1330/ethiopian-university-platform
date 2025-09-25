@@ -1,0 +1,31 @@
+{
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "error": "ስህተት ተከስቷል",
+    "save": "አስቀምጥ",
+    "cancel": "ሰርዝ",
+    "search": "ፈልግ",
+    "menu": "ዝርዝር"
+  },
+  "navigation": {
+    "dashboard": "ዳሽቦርድ",
+    "students": "ተማሪዎች",
+    "courses": "ኮርሶች",
+    "enrollment": "ምዝገባ",
+    "billing": "ክፍያ",
+    "reports": "ሪፖርቶች",
+    "settings": "ቅንብሮች"
+  },
+  "header": {
+    "appName": "ኢትዮጵያ ዩኒቨርሲቲ",
+    "searchPlaceholder": "ፈልግ...",
+    "languageToggle": "ቋንቋ",
+    "userMenu": "የተጠቃሚ ዝርዝር"
+  },
+  "dashboard": {
+    "title": "ዳሽቦርድ",
+    "welcome": "ወደ ኢትዮጵያ ዩኒቨርሲቲ መድረክ እንኳን በደህና መጡ",
+    "overview": "የስርዓት አጠቃላይ እይታ",
+    "quickActions": "ፈጣን እርምጃዎች"
+  }
+}

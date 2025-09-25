@@ -1,0 +1,31 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "menu": "Menu"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "students": "Students",
+    "courses": "Courses",
+    "enrollment": "Enrollment",
+    "billing": "Billing",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "header": {
+    "appName": "ET University",
+    "searchPlaceholder": "Search...",
+    "languageToggle": "Language",
+    "userMenu": "User menu"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to ET University Platform",
+    "overview": "System Overview",
+    "quickActions": "Quick Actions"
+  }
+}
