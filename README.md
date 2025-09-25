@@ -39,7 +39,7 @@ Gitleaks is a SAST tool for **detecting** and **preventing** hardcoded secrets l
     ░    gitleaks
 
 
-Finding:     "export BUNDLE_ENTERPRISE__CONTRIBSYS__COM=cafebabe:deadbeef",
+Finding:     "export BUNDLE_ENTERPRISE__CONTRIBSYS__COM=${SIDEKIQ_LICENSE_KEY}",
 Secret:      cafebabe:deadbeef
 RuleID:      sidekiq-secret
 Entropy:     2.609850
@@ -218,9 +218,9 @@ You can verify a finding found by gitleaks using a `git log` command.
 Example output:
 
 ```
-Finding:     aws_secret="AKIAIMNOJVGFDXXXE4OA"
+Finding:     aws_secret="${AWS_ACCESS_KEY_ID}"
 RuleID:      aws-access-token
-Secret       AKIAIMNOJVGFDXXXE4OA
+Secret       ${AWS_ACCESS_KEY_ID}
 Entropy:     3.65
 File:        checks_test.go
 Line:        37
@@ -256,7 +256,7 @@ diff --git a/checks_test.go b/checks_test.go
 --- a/checks_test.go
 +++ b/checks_test.go
 @@ -28,0 +37,1 @@
-+               "aws_secret= \"AKIAIMNOJVGFDXXXE4OA\"":          true,
++               "aws_secret= \"${AWS_ACCESS_KEY_ID}\"":          true,
 
 ```
 
