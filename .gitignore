@@ -97,6 +97,7 @@ Thumbs.db
 # Nx
 .nx/cache
 .nx/workspace-data
+*.tsbuildinfo
 
 # Docker
 .dockerignore
